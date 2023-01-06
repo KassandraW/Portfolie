@@ -1,0 +1,105 @@
+.tema{
+    margin: 15% 5% 4% 5%;
+    padding:0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boks_t{
+    width:100%;
+    padding:5%;
+    display: flex;
+    flex-direction:column;
+    border-radius: 30px;
+}
+
+.linky{
+    display:flex;
+    flex-direction: row;
+}
+
+/* farver */
+.tema2{
+    background-color:#9fc5e8;
+}
+
+.tema3{
+    background-color:#b4a7d6;
+}
+
+.tema4{
+    background-color:#b6d7a8;
+}
+
+.tema5{
+    background-color:#ffe599;
+}
+
+.tema6{
+    background-color:#ea9999;
+}
+
+.blå{
+    color:#304d67;
+}
+
+.lilla{
+    color:#4c3c76;
+}
+
+.grøn{
+    color:#497a35;
+}
+
+.gul{
+    color:#a48630;
+}
+
+.rød{
+    color:#883232;
+}
+
+
+@media only screen and (min-width: 640px){
+    .tema{
+        margin: 4% 5%;
+    padding:0 auto;
+    }
+    .boks_t{
+        width:60%;
+        padding:2%;
+    }
+
+    .grid-1_1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1em;
+    }
+    .topmargin{
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (min-width: 1460px){
+    .tema{
+        max-width: 1400px;
+        margin: 4% auto 0 auto;
+        padding:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .boks_t{
+        width:50%;
+        padding:2%;
+    }
+
+    .opgave_tekst{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2em;
+    }
+
+    
+}

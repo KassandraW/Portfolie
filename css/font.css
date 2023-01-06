@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Child;
+    src: url(../fonts/ChildWriting-Regular.ttf);
+}
+
+@font-face {
+    font-family: Teacher;
+    src: url(../fonts/TeachersStudent-Regular.ttf);
+}
+
+#navbar_title{
+    font-family: Child;
+    color:black;
+    font-size: 7rem;
+}
+
+.navbar_links{
+    font-family: Teacher;
+    color:black;
+    font-size: 2rem;
+}
+
+.om_style{
+    font-family: Teacher;
+    color:black;
+    font-size: 2.25rem;
+}
+
+.temastyle{
+    font-family: Teacher;
+    color:white;
+    font-size: 2.25rem;
+}
+
+.brødtekst{
+    font-family: comfortaa;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.opgaver_style{
+    font-family: Teacher;
+    color:white;
+    font-size: 2.25rem;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:125px;
+    text-decoration: none;
+    height:100%;
+    background-position: center;
+}
+
+.footertekst{
+    font-family: Child;
+    font-size: 15px;
+}
+
+h1{
+    font-family: Teacher;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: Child;
+    font-size: 50px;
+    margin-bottom:5px;
+}
+
+h3{
+    padding-top:10px;
+    font-family: Teacher;
+    font-size: 30px;
+    font-weight: bolder;
+    color:#079ae4;
+}
+
+.opgave_brød{
+    font-family: comfortaa;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h4{
+    font-family: Teacher;
+    font-size: 30px;
+    width:100px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linky_txt{
+    text-decoration: none;
+    font-family: Teacher;
+    font-weight: bolder;
+    font-size: 30px;
+    color:black;
+    width:100px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linky_txt:hover{
+    color:white;
+    background-image:url("../images/brushstroke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    
+}
+
+h5{
+    font-family: Comfortaa;
+    font-size: 2rem;
+    margin-bottom:1rem;
+}

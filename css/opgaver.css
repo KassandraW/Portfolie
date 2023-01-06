@@ -1,0 +1,126 @@
+.opgaver{
+    margin: 15% 5% 4% 5%;
+    padding:0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-4x1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
+}
+
+.tema_container{
+    display:flex;
+}
+
+.temaknap{
+    width:150px;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+.temastyle{
+    background-image:url("../images/brushstroke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:150px;
+    text-decoration: none;
+    height:100%;
+    background-position: center;
+}
+
+
+.fugl_hat_container{
+    height:300px;
+    margin-top: 2em;
+    grid-column: 1/3;
+}
+
+.fugl_hat{
+    background-image: url(../images/fugl_3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:100%;
+}
+
+.end{
+    grid-column: 1/3;
+    justify-self: center;
+}
+
+
+.t2:hover{
+    background-image:url("../images/brushstroke-blå2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#304d67;
+}
+
+.t3:hover{
+    background-image:url("../images/brushstroke-lilla.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#4c3c76;
+}
+
+.t4:hover{
+    background-image:url("../images/brushstroke-grøn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#497a35;
+}
+
+.t5:hover{
+    background-image:url("../images/brushstroke-gul.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#a48630;
+}
+
+.t6:hover{
+    background-image:url("../images/brushstroke-rød.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#883232;
+    grid-column: 1/3;
+}
+
+@media only screen and (min-width: 640px){
+    .opgaver{
+        margin: 4% 5% 1% 5%;
+        padding:0 auto;
+        }
+
+    .fugl_hat_container{
+        height:400px;
+        grid-column: 2/3;
+        margin-top: 0;
+     }
+     .grid-4x1{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .end{
+        grid-column: 2/3;
+    justify-self: center;
+    }
+    
+}

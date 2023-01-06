@@ -1,0 +1,269 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+.billede{
+    border: dashed 2px #9fc5e8;
+}
+
+.active{
+    color:white;
+    background-image:url("../images/brush_blå.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.dots{
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgba(51, 163, 228, 0.144) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(51, 163, 228, 0.144) 1px, transparent 1px);
+
+}
+
+footer{
+    margin-top:auto;
+    padding:20px;
+}
+
+
+/* NAVIGATION */
+.navbar{
+    height:150px;
+    font-size:1.2rem;
+    top:0;
+    z-index:999;
+}
+
+.navbar__container{
+    height:100%;
+    z-index: 1;
+    width:100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding:0 auto;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#navbar_title{
+    background-size: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    align-self: center;
+}
+
+.navbar_menu{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_item{
+    height:80px;
+}
+
+.navbar_links{
+    width:125px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-position: center;
+    
+ 
+}
+
+
+.navbar_links:hover{
+    color:white;
+    background-image:url("../images/brushstroke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+/* INDHOLD */
+
+.forside{
+    margin: 15% 5% 4% 5%;
+    padding:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top:1.5rem;
+}
+
+.om_btn, .opgaver_btn{
+    width:150px;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opgaver_btn{
+    background-image:url("../images/brush_blå.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.om_style{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:150px;
+    text-decoration: none;
+    height:100%;
+    background-position: center;
+ 
+}
+
+
+.om_style:hover{
+    color:white;
+    background-image:url("../images/brushstroke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.opgaver_btn:hover{
+    background-image:url("../images/brushstroke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.col{
+    order:1;
+}
+
+.col_1{
+    order:2;
+}
+
+
+/* .buttons{
+    display:none;
+} */
+
+
+
+@media only screen and (min-width: 640px){
+.buttons{
+    display: block;
+}
+
+.navbar__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1400px;
+}
+
+.navbar_menu{
+    list-style: none;
+    display:flex;
+    justify-content: end;
+    align-items: end;
+    grid-column: 3/4;
+}
+
+#navbar_title{
+    background-size: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    grid-column: 2/3;
+}
+
+
+.forside{
+    margin: 8% 5%;
+    padding:0 auto;
+}
+
+.col{
+    order:1;
+    align-self: center;
+}
+
+.col_1{
+    order:2;
+    display:flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top:1.5rem;
+}
+
+}
+@media only screen and (min-width: 800px){
+    .forside{
+        display:grid;
+        grid-template-columns: 1fr 1.7fr;
+    }
+    .col{
+        order:2;
+    }
+    
+    .col_1{
+        order:1;
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 1460px){
+
+    .col{
+        order:2;
+    }
+    
+    .col_1{
+        order:1;
+        display:flex;
+        flex-direction: column;
+    }
+    .forside{
+        display:grid;
+        grid-template-columns: 1fr 1.7fr;
+        max-width: 1400px;
+        margin: 8% auto 0 auto;
+        padding:0 auto;
+    }
+
+}
