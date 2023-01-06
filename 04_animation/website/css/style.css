@@ -1,0 +1,374 @@
+
+h2,h3,h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active{ background-color:rgb(243, 115, 93)}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+li{
+    background-color: rgb(202, 238, 227);
+    margin-bottom:1em;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 1em;
+    border-radius: 10px;
+    font-family: Mabook;
+}
+
+.big{
+    max-width:800px;
+    width:100%
+}
+.bigg{
+    max-width:1000px;
+}
+
+.small{
+    max-width:200px;
+}
+
+.boks{
+    background-color: rgb(202, 238, 227);
+    padding:20px;
+    border-radius: 20px;
+    width:90%;
+    
+}
+
+.height{
+    max-width:400px;
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+footer{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+#screen{
+    width:100%;
+    aspect-ratio:16/9;
+    position:relative;
+    overflow: hidden;
+}
+
+
+/* ---------- Game ----------- */
+
+#game{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    z-index: 1;
+}
+
+#infopopup{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-image: url(../assets/infopopup.svg);
+    background-size: cover;
+    z-index: 4;
+}
+
+/* info knap */
+#info_ok{
+    position:absolute;
+    width:10%;
+    background-image: url(../assets/ok_knap.svg);
+    background-size: cover;
+    aspect-ratio: 252/137;
+    top:64%;
+    left:62%;
+}
+
+#info_ok:hover{
+    cursor: pointer;
+}
+/* --------- */
+
+#game_background{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-image: url(../assets/Baggrund.svg);
+    background-size: cover;
+}
+
+#game_elements{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+
+#game_foreground{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-image: url(../assets/Forgrund.svg);
+    background-size: cover;
+    pointer-events: none;
+
+}
+
+#game_ui{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    pointer-events: none;
+}
+
+/* ------------------------------ */
+
+/* -------Game Elements------- */
+
+/* kylling */
+#kylling_container,#kylling_container2,#kylling_container3{
+    width: 10%;
+    aspect-ratio:146/129;
+    position:absolute;
+    /* top:50%;
+    left:100%; */
+}
+#kylling_container,#kylling_container2,#kylling_container3:hover{
+cursor: pointer;
+}
+
+#kylling_sprite,#kylling_sprite2,#kylling_sprite3{
+    width:100%;
+    height: 100%;
+    background-image: url(../assets/kylling.svg);
+    background-size: cover;
+}
+/* ulv */
+#ulv_container,#ulv_container2{
+    width: 20%;
+    aspect-ratio:342/227;
+    position:absolute;
+    /* top:55%;
+    left:60%; */
+}
+
+#ulv_container,#ulv_container2:hover{
+    cursor: pointer;
+}
+
+#ulv_sprite, #ulv_sprite2{
+    width:100%;
+    height: 100%;
+    background-image: url(../assets/ulv.svg);
+    background-size: cover;
+}
+
+/* --------------------------- */
+
+/* ----- UI elements ------ */
+
+#score_board{
+    position:absolute;
+    width:5.3%;
+    aspect-ratio:98/87;
+    background-image: url(../assets/ui_kylling.svg);
+    background-size: cover;
+    top:1%;
+    left:0.2%;
+    z-index: 3;
+}
+
+ #energy_board{
+    position:absolute;
+    width:3.5%;
+    aspect-ratio:98/87;
+    background-image: url(../assets/ui_liv.svg);
+    background-size: cover;
+    top:11.1%;
+    left:1.6%;
+    z-index: 2;
+}
+
+#currentLiv{
+    font-family: Mabook;
+    color: white;
+    font-size: 2.5vw;
+    position: absolute;
+    left: 6.5%;
+    top: 10.7%;
+   
+}
+#point{
+    font-family: Mabook;
+    color: white;
+    position: absolute;
+    left: 6.5%;
+    top: 2.6%;
+}
+
+#time_container {
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 1129/106;
+    background-image: url(../assets/timer_outline.svg);
+    top: 1%;
+    left: 68%;
+  }
+  
+  #time_sprite {
+    position: absolute;
+    width:29.5%;
+    aspect-ratio: 1116/86;
+    background-color: rgb(80, 175, 132);
+    top:1.5%;
+    left:68.2%;
+  }
+
+  #time_background{
+    position:absolute;
+    aspect-ratio: 1116/86;
+    width:29.5%;
+    background-image: url(../assets/timer_baggrund.svg);
+    top:1.5%;
+    left:68.2%;
+    opacity:70%;
+
+  }
+
+
+/* ------------------------ */
+
+#start{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    z-index: 5;
+    background-image: url(../assets/Titelskaerm2.svg);
+    background-size: cover;
+}
+
+/* start knap */
+#start_knap{
+    position:absolute;
+    width:20%;
+    background-image: url(../assets/start_knap.svg);
+    background-size: cover;
+    aspect-ratio: 418/322;
+    top:69%;
+    left:45%;
+    
+}
+#start_knap:hover{
+   cursor: pointer;
+}
+
+/* ----------- */
+
+#level_complete{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../assets/level_complete.svg);
+    top:0%;
+    left:0%;
+    z-index: 2;    
+    
+}
+/* level complete knap */
+#levelcomplete_genstart{
+    position:absolute;
+    width:9%;
+    aspect-ratio:147/137;
+    background-image: url(../assets/restart_level_complete.svg);
+    background-size: cover;
+    top:78%;
+    left:45%
+}
+
+#levelcomplete_genstart{
+    cursor: pointer;
+}
+/* ------------ */
+
+#game_over{
+    width:100%;
+    height:100%;
+    background-image: url(../assets/game_over.svg);
+    position:absolute;
+    top:0%;
+    left:0%;
+    z-index: 3;
+}
+
+/* gameover knap */
+#gameover_genstart{
+    position:absolute;
+    width:9%;
+    aspect-ratio:147/137;
+    background-image: url(../assets/restart_gameover.svg);
+    background-size: cover;
+    top:78%;
+    left:45%
+}
+
+#gameover_genstart:hover{
+cursor:pointer; 
+}
+/* ------------ */
+/* Hvis noget ligger i vejen for det man klikker på: pointer-events:none; */
+
+
+.hide{
+    display:none;
+}
+
+.blur{
+    filter:blur(3px)
+}
+
+/* positioner */
+
+.pos1{
+    top:50%;
+    left:100%;
+}
+
+.pos2{
+    top:60%;
+    left:100%;
+
+}
+
+.pos3{
+    top:70%;
+    left:100%;
+}
+
+.pos4{
+    top:80%;
+    left:100%;
+}

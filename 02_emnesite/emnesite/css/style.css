@@ -1,0 +1,382 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*     
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Special Elite', cursive; 
+    font-family: 'Dancing Script', cursive;
+*/
+
+main,a{
+    cursor: url('../billeder/cursor2.png'), auto;
+}
+
+h1{
+    font-family:'Special Elite', cursive;
+    font-size: 6vw;
+    
+}
+
+p{
+    font-family:'Special Elite', cursive;
+    font-size:15px;
+    
+}
+
+.vådtekst{
+    margin-left:5%;
+    padding-top:4%;
+}
+
+
+
+.blå{
+    color:#20B4FD;
+    background-color: white;
+}
+
+.blå:hover{
+    color: #DC00FF;
+}
+
+.kunblå{
+    color:#20B4FD;
+    margin-top:15%;
+}
+
+.kunblå:hover{
+    color: #DC00FF;
+}
+
+
+.pink{
+    color:#DC00FF;
+    background-color: white;
+}
+
+.pink:hover{
+    color:#20B4FD;
+}
+
+.kunpink{
+    color:#DC00FF;
+}
+.kunpink:hover{
+    color: #20B4FD;
+}
+
+body.typer{
+    margin:1em;
+}
+
+
+.typertekst{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5vw;
+    color:#DC00FF;
+    height: min-content;
+    
+}
+
+
+.tilbage{
+    font-family: 'Dancing Script', cursive;
+    font-size:5vw;
+    color:#20B4FD;
+    padding-left:0.5vw;
+    
+}
+
+.tilbagelink{
+    text-decoration: none;
+    align-self: center;
+}
+
+.tilbage:hover{
+    background-color:#20B4FD;
+    color:white;
+    padding-right:5px;
+  
+}
+
+.forside_typer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: normal;
+    color:white;
+    font-size:4vw;
+    padding:15px;
+    line-height:1.5;
+   
+}
+
+.body{
+    margin:1em;
+}
+
+body.marg{
+    margin-top:10em;
+}
+
+.forside_typer:hover{
+    background-color: white;
+    color:#FFAFA9;
+}
+.forsidefrø{
+    transform:rotate(90deg);
+}
+
+.tør1{
+    
+    height:90%;
+    width:90%;
+    margin-right:5em;
+    background: url('../billeder/tør1.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.tør2{
+    width:100%;
+    background: url('../billeder/tør2.jpg')no-repeat;
+    background-size: contain;
+    
+}
+.tør3{
+    width:100%;
+    background: url('../billeder/tør3.jpg')no-repeat;
+    background-size: contain;
+    
+}
+.tør4{
+    width:90%;
+    background: url('../billeder/tør4.jpg')no-repeat;
+    background-size: contain;
+}
+
+.tør1:hover{
+    background-image: url('../billeder/tør1_normal.png');
+}
+
+.tør2:hover{
+    background-image: url('../billeder/tør2_normal.jpg');
+}
+
+.tør3:hover{
+    background-image: url('../billeder/tør3_normal.jpg');
+}
+
+.tør4:hover{
+    background-image: url('../billeder/tør4_normal.jpg');
+}
+
+
+.boks1{
+    
+    width:100%;
+    height:100%;
+    background: url('../billeder/våd1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:3%;
+    background-position: center;
+    
+}
+
+.boks2{
+    
+    width:100%;
+    background-image: url('../billeder/våd2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:5%;
+    background-position: center;
+ 
+    
+
+    
+}
+
+.boks3{
+    
+    width:100%;
+    background: url('../billeder/våd3.jpg') no-repeat;
+    background-size: contain;
+    margin-top:3%;
+    background-position: center;
+    
+}
+
+
+.boks1:hover{
+    background-image: url('../billeder/våd1_normal.png');
+}
+
+.boks2:hover{
+    background-image: url('../billeder/våd2_normal.jpg');
+}
+
+.boks3:hover{
+    background-image: url('../billeder/våd3_normal.jpg');
+}
+
+/* billed leg */
+
+a img.hover {
+    display: none;
+}
+a img.default {
+    display: inherit;
+}
+a:hover img.hover {
+    display: inherit;
+}
+a:hover img.default {
+    display: none;
+}
+
+
+@media(min-width:800px){
+
+p{
+    font-size:1.5vw;
+}
+body.marg{
+    margin:0;
+}
+
+.forsidefrø{
+    transform:rotate(0);
+}
+
+body.typer{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.pink{
+    padding-top:2%;
+    margin-right:-20%;
+    margin-bottom:5%;
+    align-self:end;
+
+}
+
+.tilbage{
+    width:min-content;
+    font-size:1.5vw;
+}
+
+
+.typertekst{
+    font-size: 0.75vw;
+}
+
+/* våd_frø.html */
+
+.boks1{
+    /* border:2px solid red; */
+    width:90%;
+    background: url('../billeder/våd1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.boks2{
+    /* border:2px solid red; */
+    
+    width:90%;
+    background-image: url('../billeder/våd2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:3%;
+}
+
+.boks3{
+    /* border:2px solid red; */
+    height:80%;
+    background: url('../billeder/våd3.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.boks1:hover{
+    background-image: url('../billeder/våd1_normal.png');
+}
+
+.boks2:hover{
+    background-image: url('../billeder/våd2_normal.jpg');
+}
+
+.boks3:hover{
+    background-image: url('../billeder/våd3_normal.jpg');
+}
+
+.tekstboks{
+    background-color:#EAD1F4;
+    height:60%;
+    width:100%;
+}
+
+.tør1{
+    
+    height:90%;
+    width:90%;
+    margin-right:5em;
+    background: url('../billeder/tør1.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.tør2{
+    
+    height:90%;
+    width:90%;
+    background: url('../billeder/tør2.jpg')no-repeat;
+    background-size: contain;
+    
+}
+.tør3{
+    
+    height:90%;
+    width:90%;
+    background: url('../billeder/tør3.jpg')no-repeat;
+    background-size: contain;
+    
+}
+.tør4{
+    
+    height:90%;
+    width:90%;
+    margin-right:5em;
+    background: url('../billeder/tør4.jpg')no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.tør1:hover{
+    background-image: url('../billeder/tør1_normal.png');
+}
+
+.tør2:hover{
+    background-image: url('../billeder/tør2_normal.jpg');
+}
+
+.tør3:hover{
+    background-image: url('../billeder/tør3_normal.jpg');
+}
+
+.tør4:hover{
+    background-image: url('../billeder/tør4_normal.jpg');
+}
+
+.tekstboks2{
+    background-color:#B8D4F0;
+    height:50%;
+    width:100%;
+}
+
+}
+

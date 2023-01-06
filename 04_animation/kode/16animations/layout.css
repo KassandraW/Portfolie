@@ -1,0 +1,40 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    margin: 1vw;    
+}
+
+.animation {
+    border: 2px solid black;
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    max-width: 20vw;
+}
+
+.text h1, .text p {
+    margin: 0;
+}
+
+
+.ball {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    background-image: url(beachball.svg);
+    background-size: 100%;
+    
+    top: 7.5vw;
+    left: 7.5vw;
+}
+
+#animation_11 .animation {
+    background-color: rgb(87, 83, 79);
+}

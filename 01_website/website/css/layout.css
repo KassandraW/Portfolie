@@ -1,0 +1,111 @@
+img{
+    max-width: 100%;
+}
+@media(min-width:800px){
+    img{
+        max-width: 100%;
+    }
+
+header{
+    display:grid;
+    max-width: 1400px;
+    margin:auto;
+}
+
+main{
+    display:grid;
+    max-width: 1400px;
+    margin:auto;
+}
+
+/* index */
+section.grid_2-1{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:1em;
+    
+}
+
+.col_order{
+    order:-1;
+    }
+
+    section.grid_1-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2em;
+}
+
+dl.grid_1-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_1-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+/*Operativsystemer*/
+.grid_5-3{
+    display:grid;
+    grid-template-columns: 5fr 3fr;
+    gap:1em;
+
+}
+.grid_2-3{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap:1em;
+}
+
+.grid_3-2{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap:1em;
+    grid-column: 1/2;
+}
+.order{
+    order:2;
+}
+
+
+/* Komponenter */
+
+.grid_1-1-1{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2em;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+
+}
+
+img:last-child{
+    margin-top:auto;
+}
+
+/* Galleri */
+
+.grid_1-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_1-1-1-1{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1em;
+}
+
+.maxtekst{
+    max-width:65ch;
+}
+
+}

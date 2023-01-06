@@ -1,0 +1,62 @@
+<mxfile host="65bd71144e">
+    <diagram id="9JmcImGVnm6acoKlBlC9" name="Page-1">
+        <mxGraphModel dx="499" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="iuU_2dQMTSEWbqAGZvUB-3" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="399" y="115" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-2" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Når siden er loadet&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="iuU_2dQMTSEWbqAGZvUB-1" connectable="0" vertex="1">
+                    <mxGeometry x="-0.2743" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-3" value="" style="ellipse;fillColor=#000000;strokeColor=none;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="384" y="20" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-4" value="stopSpillet" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;expand=0;resizable=0;" parent="1" vertex="1">
+                    <mxGeometry x="269" y="430" width="260" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-5" value="udskriver &quot;stopSpillet&quot; i konsollen" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;rounded=0;" parent="iuU_2dQMTSEWbqAGZvUB-4" vertex="1">
+                    <mxGeometry y="30" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-6" value="startSpillet" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;expand=0;resizable=0;" parent="1" vertex="1">
+                    <mxGeometry x="269" y="263" width="260" height="97" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-7" value="Start timer-animationenerne:&#10;- tilføjer minut-animation på minut-viser&#10;- tilføjer time-animation på time-viser" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;rounded=0;" parent="iuU_2dQMTSEWbqAGZvUB-6" vertex="1">
+                    <mxGeometry y="30" width="260" height="67" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="iuU_2dQMTSEWbqAGZvUB-7" target="iuU_2dQMTSEWbqAGZvUB-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-9" value="&lt;div style=&quot;font-size: 12px ; line-height: 18px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Når timer-animationen er færdig&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="iuU_2dQMTSEWbqAGZvUB-8" connectable="0" vertex="1">
+                    <mxGeometry x="-0.2057" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-10" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;rounded=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="384" y="560" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="iuU_2dQMTSEWbqAGZvUB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" parent="1" source="iuU_2dQMTSEWbqAGZvUB-5" target="iuU_2dQMTSEWbqAGZvUB-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="iuU_2dQMTSEWbqAGZvUB-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="420" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Ved klik på uret" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1875" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="sidenVises" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;expand=0;resizable=0;" parent="1" vertex="1">
+                    <mxGeometry x="269" y="120" width="260" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,16 @@
+.newbg{
+    background-color: rgb(217, 200, 232);
+    position:absolute;
+    padding:10px;
+    border-radius: 30px;
+}
+
+.falling{
+    animation: falling 1s infinite linear alternate;
+}
+
+@keyframes falling{
+    to{
+        translate: 0 1000%
+    }
+}

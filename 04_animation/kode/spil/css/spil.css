@@ -1,0 +1,252 @@
+@font-face {
+  font-family: Abel;
+  src: url("../font/Abel-Regular.woff");
+}
+
+#screen {
+  position: relative;
+  border: 2px solid black;
+  width: 95%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+#game_background {
+  background-image: url(../img/amphitheatrum.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+}
+#game_background2 {
+  background-image: url(../img/amphitheatrum_table.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+#game_foreground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#newton_container {
+  position: absolute;
+  bottom: -25%;
+  right: 17%;
+  height: 75%;
+  aspect-ratio: 1/2.8;
+}
+#newton_sprite {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/Newton.png");
+  background-size: contain;
+}
+#game_ui {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#points,
+#lives {
+  width: 7%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 3px rgb(102, 9, 9) solid;
+  position: absolute;
+  top: 2%;
+  background-color: rgb(87, 171, 172);
+  color: beige;
+  font-family: Abel;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55%;
+}
+#points {
+  left: 2%;
+}
+#lives {
+  right: 2%;
+}
+
+#apple_container1 {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+#apple_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/apple.svg);
+}
+#flask_container1 {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/2.3;
+}
+#flask_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/flask3.svg);
+}
+
+.pos1 {
+  left: 5%;
+  top: -20%;
+}
+.pos2 {
+  left: 15%;
+  top: -20%;
+}
+.pos3 {
+  left: 25%;
+  top: -20%;
+}
+.pos4 {
+  left: 35%;
+  top: -20%;
+}
+.pos5 {
+  left: 45%;
+  top: -20%;
+}
+.pos6 {
+  left: 55%;
+  top: -20%;
+}
+.pos7 {
+  left: 65%;
+  top: -20%;
+}
+.pos8 {
+  left: 75%;
+  top: -20%;
+}
+.flypos1 {
+  left: -10%;
+  top: 10%;
+}
+.flypos2 {
+  left: -10%;
+  top: 25%;
+}
+.flypos3 {
+  left: -10%;
+  top: 45%;
+}
+.flypos4 {
+  left: -10%;
+  top: 60%;
+}
+
+.falling {
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.flying {
+  animation-name: flying;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.walking {
+  animation-name: walking;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.walkCycle {
+  animation-name: walkCycle;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.freeze {
+  animation-play-state: paused;
+}
+.disAppear {
+  animation-name: disAppear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes falling {
+  100% {
+    translate: 0 700%;
+  }
+}
+@keyframes flying {
+  100% {
+    translate: 1200% 0;
+  }
+}
+@keyframes walking {
+  0% {
+    translate: 0 0;
+    scale: 1;
+    transform: scaleX(1);
+    z-index: 0;
+  }
+  30% {
+    translate: -130% -48%;
+    scale: 0.34;
+    transform: scaleX(1);
+    z-index: -1;
+  }
+  45% {
+    translate: -210% -48%;
+    scale: 0.35;
+    transform: scaleX(1);
+  }
+  75% {
+    translate: -340% 0%;
+    scale: 1;
+    transform: scaleX(1);
+    z-index: 0;
+  }
+  75.5% {
+    translate: -320% 0%;
+    scale: 1;
+    transform: scaleX(-1);
+  }
+  99.5% {
+    translate: 0 0;
+    scale: 1;
+    transform: scaleX(-1);
+  }
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes walkCycle {
+  to {
+    translate: 0 1%;
+  }
+}
+@keyframes disAppear {
+  to {
+    scale: 0;
+    rotate: 3turn;
+  }
+}

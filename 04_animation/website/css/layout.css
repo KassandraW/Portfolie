@@ -1,0 +1,18 @@
+body{
+    margin:3%;
+}
+
+
+@media(min-width:800px){
+    body{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left:5%;
+        margin-right:5%;
+        max-width: 1400px;
+    }
+}
+    
+
+
+

@@ -1,0 +1,128 @@
+#screen{
+    width:100%;
+    aspect-ratio:16/9;
+    background-color: bisque;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ---------------------------- */
+
+#game{
+    width:100%;
+    height:100%;
+    background-color: rgb(196, 141, 171);
+    position:absolute;
+    top:0%;
+    left:0%;
+    
+    
+}
+
+#game_background{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-image: url(svg/baggrund.svg);
+    background-size: cover;
+}
+
+#game_elements{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+
+#game_foreground{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-image: url(svg/mellemgrund.svg);
+    background-size: cover;
+
+}
+
+#game_ui{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+
+/* ------- Game elements ----------- */
+
+#carljohan_container{
+    position:absolute;
+    width:12%;
+    aspect-ratio: 5/7;
+    top:53%;
+    left:49%;
+}
+
+#carljohan_sprite{
+    background-image: url(svg/carljohan_g.svg);
+    background-size:cover;
+    width:100%;
+    height:100%;
+    
+}
+
+#fluesvamp_container{
+    position:absolute;
+    width:12%;
+    aspect-ratio: 5/7;
+    top:28%;
+    left:21%;
+}
+
+#fluesvamp_sprite{
+    background-image: url(svg/fluesvamp_2.svg);
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+
+/* ----------------------------- */
+
+#start{
+    width:100%;
+    height:100%;
+    background-color: rgb(169, 141, 196);
+    position:absolute;
+    top:0%;
+    left:0%;
+   
+    display:none;
+}
+
+
+#level_complete{
+    width:100%;
+    height:100%;
+    background-color: rgb(141, 196, 147);
+    position:absolute;
+    top:0%;
+    left:0%;
+    
+    display:none;
+    
+    
+}
+
+#game_over{
+    width:100%;
+    height:100%;
+    background-color: rgb(141, 179, 196);
+    position:absolute;
+    top:0%;
+    left:0%;
+    
+    display:none;
+}

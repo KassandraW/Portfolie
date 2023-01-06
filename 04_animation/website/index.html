@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Rescue</title>
+    <link rel="icon" type="image/x-icon" href="assets/ui_kylling.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/text.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Chicken Rescue</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Spil</a></li>
+                <li><a href="ide.html">Ide</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="grafik.html">Grafik</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+    <main>
+        <div id="screen">
+            
+            <div id="game">
+                <div id="game_background"></div>
+                <div id="game_elements">
+                    <div id="kylling_container">
+                        <div id="kylling_sprite"></div>
+                    </div>
+                    <div id="kylling_container2">
+                        <div id="kylling_sprite2"></div>
+                    </div>
+
+                    <div id="kylling_container3">
+                        <div id="kylling_sprite3"></div>
+                    </div>
+
+                    <div id="ulv_container">
+                        <div id="ulv_sprite"></div>
+                    </div>
+
+                    <div id="ulv_container2">
+                        <div id="ulv_sprite2"></div>
+                    </div>
+
+                </div>
+                <div id="game_foreground"></div>
+                <div id="game_ui">
+                    <div id="point"> <span id="antal"></span>/10</div>
+                    <div id="currentLiv"></div>
+                    <div id="score_board"></div>
+                    <div id="energy_board"></div>
+                    <div id="time_background"></div>
+                    <div id="time_sprite"></div>
+                    <div id="time_container"></div>
+                    <div id="ui_board"></div>
+                    
+                </div>
+            </div>
+
+            <div id="infopopup">
+                <div id="info_ok" class="pulse tekst"></div>
+            </div>
+            <div id="start">
+                <div id="start_knap" class="pulse"></div>
+            </div>
+            <div id="game_over">
+                <div id="gameover_genstart" class="pulse"></div>
+            </div>
+            <div id="level_complete">
+                <div id="levelcomplete_genstart" class="pulse"></div>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer><p class="footertekst">Lavet af Kassandra W. <br> <br>Musik af Alexander Nakarada</p></footer>
+    <audio src="audio/point.mp3" id="point_lyd"></audio>
+    <audio src="audio/point2.mp3" id="point_lyd2"></audio>
+    <audio src="audio/loselife.mp3" id="mistliv_lyd"></audio>
+    <audio src="audio/fly_faster_audio.mp3" id="bg_music"></audio>
+    <audio src="audio/victory.mp3" id="victory_audio"></audio>
+    <audio src="audio/gameover.mp3" id="gameover_audio"></audio>
+    <script src="js/java.js"></script>
+</body>
+</html>

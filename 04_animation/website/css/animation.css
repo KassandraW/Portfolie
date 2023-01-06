@@ -1,0 +1,194 @@
+/* Kylling */
+.spin{
+    animation:spin 0.5s infinite linear;
+}
+
+@keyframes spin{
+    0%{
+        rotate:0deg;
+    }
+    50%{
+        rotate:360deg;
+    }
+    100%{
+        rotate:720deg;
+    }
+    
+}
+
+.run_kylling{
+    animation:run_kylling 0.2s infinite linear alternate;
+}
+
+@keyframes run_kylling{
+    0%{
+        rotate:5deg;
+    }
+    100%{
+        rotate:-30deg;
+    }
+}
+
+
+.flyv_ud{
+    animation: flyv_ud 0.5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes flyv_ud{
+    0%{
+        scale:1;
+        rotate: 0deg;
+    }
+
+    100%{
+        translate:-200% -600%;
+        scale:0.5;
+        rotate:720deg;
+
+    }
+}
+
+.move_kylling1{
+    animation: move_kylling1 1.6s linear;
+    /* animation-fill-mode: both; */
+}
+
+.move_kylling2{
+    animation: move_kylling2 1.6s linear;
+    transform: scaleX(-1);
+    /* animation-fill-mode: both; */
+}
+
+@keyframes move_kylling1{
+    0%{translate:0 0;
+    }
+
+    100%{
+        translate: -1200% 0 ;
+    }
+}
+
+@keyframes move_kylling2{
+    0%{translate:-1200% 0;
+    }
+
+    100%{
+        translate: 0 0 ;
+    }
+}
+
+
+/* Ulv */
+.run{
+    animation:run 0.2s infinite linear alternate;
+}
+
+@keyframes run{
+    0%{
+        rotate:5deg;
+    }
+    100%{
+        rotate:-5deg;
+    }
+}
+
+.shake{
+    animation:shake 0.1s infinite linear alternate;
+}
+
+@keyframes shake{
+    0%{
+        rotate:10deg;
+    }
+    100%{
+        rotate:-10deg;
+    }
+}
+
+.stor{
+    animation:stor 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stor{
+    0%{
+        scale:1;
+    }
+    100%{
+        scale:20;
+        opacity:0%;
+    }
+}
+
+.move_ulv1{
+    animation: move_ulv1 1.5s linear;
+}
+
+@keyframes move_ulv1{
+    0%{translate:0 0;
+    }
+
+    100%{
+        translate: -600% 0 ;
+    }
+}
+
+.move_ulv2{
+    animation: move_ulv2 1.5s linear;
+    transform: scaleX(-1);
+}
+
+@keyframes move_ulv2{
+    0%{translate:-600% 0;
+    }
+
+    100%{
+        translate: 0 0 ;
+    }
+}
+
+/* Begge */
+.frys {
+    animation-play-state: paused;
+  }
+
+
+  .pulse{
+    animation: pulse 0.8s alternate infinite linear;
+  }
+
+  @keyframes pulse{
+    0%{scale:1;
+    }
+
+    100%{
+        scale: 1.1 ;
+    }
+}
+
+/* timer */
+
+.shrink {
+    animation-name: shrink_kf;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform-origin: 0 100%;
+  }
+  
+  @keyframes shrink_kf {
+    0% {
+      scale: 1 1;
+      background-color: rgb(80, 175, 132);
+    }
+    50% {
+      background-color: rgb(204, 185, 59);
+    }
+    100% {
+      scale: 0 1;
+      background-color: rgb(170, 48, 46);
+    }
+  }

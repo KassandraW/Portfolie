@@ -1,0 +1,38 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="95.9mm" height="95.9mm" viewBox="0 0 271.83 271.83">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #ffd238;
+            }
+
+            .cls-1,
+            .cls-2 {
+                stroke: #ffd238;
+                stroke-miterlimit: 10;
+            }
+
+            .cls-2 {
+                fill: #fff;
+            }
+
+            .cls-3 {
+                fill: #1d1d1b;
+            }
+
+        </style>
+    </defs>
+    <circle class="cls-1" cx="135.92" cy="135.92" r="135.42" />
+    <circle class="cls-2" cx="135.92" cy="135.92" r="125.99" />
+    <rect class="cls-3" x="134.57" y="20.37" width="5.52" height="16.18" />
+    <rect class="cls-3" x="80.65" y="34.06" width="5.52" height="16.18" transform="translate(-9.9 47.35) rotate(-30)" />
+    <rect class="cls-3" x="40.8" y="72.87" width="5.52" height="16.18" transform="matrix(0.5, -0.87, 0.87, 0.5, -48.34, 78.21)" />
+    <rect class="cls-3" x="25.7" y="126.41" width="5.52" height="16.18" transform="translate(-106.05 162.96) rotate(-90)" />
+    <rect class="cls-3" x="39.39" y="180.33" width="5.52" height="16.18" transform="translate(-99.96 319.13) rotate(-120)" />
+    <rect class="cls-3" x="78.2" y="220.18" width="5.52" height="16.18" transform="translate(36.94 466.44) rotate(-150)" />
+    <rect class="cls-3" x="131.74" y="235.29" width="5.52" height="16.18" transform="translate(269.01 486.75) rotate(-180)" />
+    <rect class="cls-3" x="185.66" y="221.6" width="5.52" height="16.18" transform="translate(466.44 334.39) rotate(150)" />
+    <rect class="cls-3" x="225.51" y="182.78" width="5.52" height="16.18" transform="translate(507.71 88.62) rotate(120)" />
+    <rect class="cls-3" x="240.62" y="129.24" width="5.52" height="16.18" transform="translate(380.71 -106.05) rotate(90)" />
+    <rect class="cls-3" x="226.93" y="75.32" width="5.52" height="16.18" transform="translate(187.08 -157.21) rotate(60)" />
+    <rect class="cls-3" x="188.11" y="35.47" width="5.52" height="16.18" transform="matrix(0.87, 0.5, -0.5, 0.87, 47.35, -89.6)" />
+</svg>

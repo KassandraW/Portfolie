@@ -1,0 +1,331 @@
+/* Løsninger til de 16 animationer */
+
+/* Animation 1 */
+.falling {
+  animation-name: falling;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes falling {
+  from {
+    transform: translateY(-250%);
+  }
+  to {
+    transform: translateY(250%);
+  }
+}
+
+/* Animation 2 */
+/* NB: Kort format */
+.bouncing {
+  animation: bouncing 0.5s alternate infinite ease-in;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+/* Animation 3 */
+.drop {
+  animation: drop 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(150%);
+  }
+}
+
+/* Animation 4 */
+.pattern {
+  animation: pattern 5s infinite linear;
+}
+
+@keyframes pattern {
+  0% {
+    transform: translate(0%, -165%);
+  }
+
+  25% {
+    transform: translate(145%, 0%);
+  }
+
+  50% {
+    transform: translate(0%, 145%);
+  }
+
+  75% {
+    transform: translate(-165%, 0%);
+  }
+  100% {
+    transform: translate(0%, -165%);
+  }
+}
+
+/* Animation 5 */
+.zoom_out {
+  transform: scale(0, 0);
+  transition: transform 3s;
+}
+
+/* Animation 6 */
+.zoom_in {
+  transform: scale(6, 6);
+  transition: transform 3s;
+}
+
+/* Animation 7 */
+.fade_out {
+  opacity: 100%;
+  animation: fade_out 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_out {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Animation 8 */
+.fade_in {
+  opacity: 0%;
+  animation: fade_in 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_in {
+  to {
+    opacity: 100;
+  }
+}
+
+/* Animation 9
+
+alternativ løsning uden keyframes:
+.rotation {
+  transform: rotate(12turn);
+  transition: transform 8s linear;
+}
+*/
+
+.rotation {
+  animation-name: rotation1_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation1_kf {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation2 {
+  animation-name: rotation2_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 200%;
+  left: 0;
+}
+
+@keyframes rotation2_kf {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Animation 11 */
+.glow {
+  animation: glow 1s infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: brightness(100%) drop-shadow(0 0 -1px yellow);
+  }
+
+  50% {
+    filter: brightness(110%) drop-shadow(0 0 40px yellow);
+  }
+}
+
+/* Animation 12 */
+.blur_to_gray {
+  animation: roll 2s infinite ease-in-out;
+}
+
+@keyframes roll {
+  0%,
+  100% {
+    transform: translateX(-158%) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(140%) rotate(100deg);
+    filter: grayscale(100%) blur(2.5px);
+  }
+}
+
+/* Animation 13 */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+/* Animation 14 */
+.overshoot {
+  animation: overshoot 2s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 1.41);
+  animation-fill-mode: forwards;
+}
+
+@keyframes overshoot {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(140%) rotate(200deg);
+  }
+}
+
+/* Animation 15 */
+.bounce {
+  animation: bounce 1.5s cubic-bezier(0.35, 0.64, 0.73, 0.46) infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-170%, -140%) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-70%, 140%) rotate(20deg);
+  }
+
+  36% {
+    transform: translate(-18%, 1%) rotate(40deg);
+  }
+
+  50% {
+    transform: translate(31%, 140%) rotate(60deg);
+  }
+
+  62% {
+    transform: translate(58%, 70%) rotate(80deg);
+  }
+
+  70% {
+    transform: translate(78%, 140%) rotate(100deg);
+  }
+
+  78% {
+    transform: translate(93%, 105%) rotate(120deg);
+  }
+
+  86% {
+    transform: translate(104%, 140%) rotate(140deg);
+  }
+  94% {
+    transform: translate(113%, 122%) rotate(160deg);
+  }
+  97% {
+    transform: translate(120%, 140%) rotate(180deg);
+  }
+  99% {
+    transform: translate(128%, 135%) rotate(190deg);
+  }
+  100% {
+    transform: translate(130%, 140%) rotate(192deg);
+  }
+}
+
+/* Animation 16 */
+.squash {
+  animation: squash 2s infinite cubic-bezier(0.31, 0.6, 0.75, 0.44);
+}
+
+@keyframes squash {
+  0% {
+    transform: translate(0, -165%) scale(1, 0.8);
+  }
+
+  2% {
+    transform: translate(0, -165%) scale(1, 1);
+  }
+
+  22% {
+    transform: translate(145%, 0) scale(1, 1);
+  }
+
+  25% {
+    transform: translate(150%, 0) scale(0.8, 1);
+  }
+
+  28% {
+    transform: translate(145%, 0) scale(1, 1);
+  }
+
+  48% {
+    transform: translate(0, 145%) scale(1, 1);
+  }
+
+  50% {
+    transform: translate(0, 150%) scale(1, 0.8);
+  }
+
+  52% {
+    transform: translate(0, 145%) scale(1, 1);
+  }
+
+  73% {
+    transform: translate(-165%, 0) scale(1, 1);
+  }
+
+  75% {
+    transform: translate(-170%, 0) scale(0.8, 1);
+  }
+
+  77% {
+    transform: translate(-165%, 0) scale(1, 1);
+  }
+
+  98% {
+    transform: translate(0, -165%) scale(1, 1);
+  }
+
+  100% {
+    transform: translate(0, -165%) scale(1, 0.8);
+  }
+}

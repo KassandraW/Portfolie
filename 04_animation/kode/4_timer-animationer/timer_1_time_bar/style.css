@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tekst{
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: firebrick;
+  margin-left: 1rem;
+}
+
+/* ------------ UI ELEMENTER ------------ */
+
+#game_ui {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: azure;
+}
+
+#time_container {
+  position: absolute;
+  width: 6%;
+  aspect-ratio: 6/30;
+  border: 2px solid black;
+  background-color: rgba(208, 204, 204, 0.383);
+  top: 10%;
+  left: 45%;
+}
+
+#time_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: limegreen;
+}
+
+/* ------------ ANIMATIONER ------------ */
+
+.shrink {
+  animation-name: shrink_kf;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 100%;
+}
+
+@keyframes shrink_kf {
+  0% {
+    scale: 1 1;
+    background-color: limegreen;
+  }
+  50% {
+    background-color: rgb(255, 230, 0);
+  }
+  100% {
+    scale: 1 0;
+    background-color: red;
+  }
+}

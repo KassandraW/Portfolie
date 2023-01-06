@@ -1,0 +1,42 @@
+
+#boks{
+    background-color: rgb(222, 36, 67);
+    margin:2em;
+    
+    height:100px;
+    width: 100px;
+
+    animation:frem 5s;
+    animation-iteration-count: infinite;
+     
+}
+
+/* @keyframes frem{
+    0%{
+        translate:0;
+    }
+    50%{
+        translate:200%;
+    }
+    100%{
+        translate:0%;
+    }
+} */
+
+@keyframes frem{
+    0%{
+        translate:0;
+    }
+    25%{
+        translate:200%;
+    }
+    50%{
+        translate:200% 200%;
+    }
+    75%{
+        translate:0 200%;
+    }
+    100%{
+        translate:0;
+    }
+}

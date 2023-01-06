@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Mabook;
+    src: url(../font/Mabook.ttf);
+  }
+
+  @font-face {
+    font-family: Sonic;
+    src: url(../font/Supersonic\ Rocketship.ttf);
+  }
+
+h1{
+    font-family: Mabook;
+    font-size: 60px;
+    color: #15272B;
+    margin: 0;
+    padding: 0;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+h2,h4,h3{
+    font-family: Sonic;
+}
+
+h2{
+    color:rgb(12, 68, 52);
+    font-size: 30px;
+
+}
+
+h4,h3{
+    color:rgb(65, 139, 117);
+    font-size: 17px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif; 
+    color:rgb(33, 95, 77);
+    line-height: 1.5;
+}
+
+.footertekst{
+    font-family: Mabook;
+    color:rgb(202, 199, 199);
+}
+
+.tekst{
+    color:white;
+    text-align: center;
+    font-family: Mabook;
+    font-size: 4vw;
+}
