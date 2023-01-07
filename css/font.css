@@ -8,6 +8,11 @@
     src: url(../fonts/TeachersStudent-Regular.ttf);
 }
 
+@font-face {
+    font-family: Body;
+    src: url(../fonts/Martel-Regular.ttf);
+}
+
 #navbar_title{
     font-family: Child;
     color:black;
@@ -33,7 +38,7 @@
 }
 
 .brødtekst{
-    font-family: comfortaa;
+    font-family: body;
     font-size: 1.1rem;
     line-height: 1.5;
 }
@@ -77,9 +82,10 @@ h3{
 }
 
 .opgave_brød{
-    font-family: comfortaa;
+    font-family: body;
     font-size: 1rem;
     line-height: 1.5;
+    color: #131313;
 }
 
 h4{
