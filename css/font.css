@@ -43,6 +43,12 @@
     line-height: 1.5;
 }
 
+.byline{
+    font-family: Comfortaa;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
 .opgaver_style{
     font-family: Teacher;
     color:white;

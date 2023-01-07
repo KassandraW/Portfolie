@@ -6,12 +6,21 @@
     align-items: center;
 }
 
+.ul{
+    text-decoration: none;
+}
+
+
 .portrait{
     width:100%;
 }
 
 .om_txt{
     margin-top:3%;
+}
+
+.ul_ommig{
+    list-style: inside;
 }
 
 @media only screen and (min-width: 640px){
