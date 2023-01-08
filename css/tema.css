@@ -79,8 +79,9 @@
     .topmargin{
         margin-top: 1em;
     }
-}
 
+    
+}
 @media only screen and (min-width: 1460px){
     .tema{
         max-width: 1400px;
@@ -101,5 +102,13 @@
         gap:2em;
     }
 
+    .flexy{
+        display: flex;
+        justify-content: space-around;
+        max-height: 395px;
+    }
+    .lille{
+        height:100%;
+    }
     
 }
