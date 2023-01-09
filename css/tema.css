@@ -76,6 +76,10 @@
         grid-template-columns: 1fr 1fr;
         gap:1em;
     }
+
+    .margin_bot{
+        margin-bottom:2em;
+    }
     .topmargin{
         margin-top: 2em;
     }
@@ -97,9 +101,8 @@
     }
 
     .opgave_tekst{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         gap:2em;
+        margin-right:1em;
     }
 
     .flexy{
@@ -110,5 +113,13 @@
     .lille{
         height:100%;
     }
-    
+    .pitch{
+        height:90%;
+        justify-self: center;
+    }
+
+    .ux{
+        height:70%;
+        justify-self: center;
+    }
 }
