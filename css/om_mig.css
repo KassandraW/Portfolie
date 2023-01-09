@@ -23,6 +23,10 @@
     list-style: inside;
 }
 
+.cv2{
+    display: none;
+}
+
 @media only screen and (min-width: 640px){
     .ommig{
     margin: 4% 5%;
@@ -37,7 +41,13 @@
     .om_txt{
         margin-top:0;
     }
-
+    .cv2{
+        display:block;
+    }
+    
+    .cv{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 800px){
@@ -76,5 +86,10 @@
     .cv{
         grid-column: 3/4;
         grid-row: 1;
+        display:block;
     }
+    .cv2{
+        display:none;
+    }
+
 }
