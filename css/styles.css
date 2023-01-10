@@ -11,6 +11,27 @@
     padding:2px;
 }
 
+.billede2{
+    border: dashed 2px #b4a7d6;
+    padding:2px;
+}
+
+.billede3{
+    border: dashed 2px #b6d7a8;
+    padding:2px;
+}
+
+.billede4{
+    border: dashed 2px #ffe599;
+    padding:2px;
+}
+
+.billede5{
+    border: dashed 2px #ea9999;
+    padding:2px;
+}
+
+
 .active{
     color:white;
     background-image:url("../images/brush_blå.png");
@@ -18,6 +39,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 
 img{
