@@ -13,6 +13,11 @@
     src: url(../fonts/Martel-Regular.ttf);
 }
 
+@font-face {
+    font-family: Comfortaa;
+    src: url(../fonts/Comfortaa-Regular.ttf);
+}
+
 #navbar_title{
     font-family: Child;
     color:black;

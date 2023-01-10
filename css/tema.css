@@ -26,43 +26,46 @@
 }
 
 .link1{
-    color:#9fc5e8;
-    border-color:#9fc5e8;
-}
-
-.link1:hover{
     color:#304d67;
     border-color:#304d67;
 }
 
-.link2{
-    color:#b4a7d6;
-    border-color:#b4a7d6;
+.link1:hover{
+    color:#9fc5e8;
+    border-color:#9fc5e8;
 }
 
-.link2:hover{
+.link2{
     color:#4c3c76;
     border-color:#4c3c76;
 }
 
+.link2:hover{
+    
+    color:#b4a7d6;
+    border-color:#b4a7d6;
+}
+
 .link3{
+    color:#497a35;
+    border-color:#497a35;
+    
+}
+
+.link3:hover{
     color:#b6d7a8;
     border-color:#b6d7a8;
 }
 
-.link3:hover{
-    color:#497a35;
-    border-color:#497a35;
-}
-
 .link4{
-    color:#ffe599;
-    border-color:#ffe599;
+    
+    color:#a48630;
+    border-color:#a48630;
 }
 
 .link4:hover{
-    color:#a48630;
-    border-color:#a48630;
+    color:#ffe599;
+    border-color:#ffe599;
 }
 
 
