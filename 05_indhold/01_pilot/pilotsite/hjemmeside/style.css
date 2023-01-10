@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+main,body,html{
+    height:100%;
+}
+
+main{
+    background-color:#101010;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    margin:1%;
+}
+
+.margin-bot{
+    margin-bottom:1%;
+}
+
+.titel{
+    width:100%;
+    background-color:#101010;
+    height:125px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    font-size: 100px;
+}
+.produceret{
+    display: flex;
+    gap: 1em;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+.billede{
+    height:500px;
+    background-image: url(billeder/Kamera.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
