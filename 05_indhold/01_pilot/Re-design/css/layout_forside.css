@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/forside.png");
+    /* aspect-ratio: 1920/1228; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1.5%;
+    margin-right: 2.9%;
+    border-bottom: 0;
+    padding: 0;
+  }
+  nav ul {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    position: relative;
+    z-index: 1;
+  }
+
+  nav a:after {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    top: -30%;
+    left: -18%;
+    margin: auto;
+    width: 135%;
+    content: ".";
+    color: transparent;
+    background: rgba(239, 230, 223, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  nav a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 130%;
+    transition: all 0.6s ease;
+  }
+  .active:after {
+    opacity: 1;
+    visibility: visible;
+    height: 130%;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-left: 2.9%;
+    padding-right: 2.9%;
+  }
+
+  footer ul {
+    list-style: none;
+    color: white;
+    font-family: Noto;
+    font-size: 14px;
+  }
+
+  #rablogo {
+    width: 12.8%;
+  }
+
+  .forsidetekst {
+    position: absolute;
+    top: 31%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

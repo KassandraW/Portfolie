@@ -1,0 +1,31 @@
+.img-outline {
+  width: 360px;
+  height: auto;
+  outline: 50px;
+}
+
+.imgportraet {
+  max-width: 75%;
+  height: auto;
+  padding: 1cm;
+}
+
+video {
+  width: 640px;
+  height: auto;
+  padding: 4%;
+}
+
+h5 {
+  background-color: var(--clr-body);
+}
+
+.tekstpadding_left {
+  padding: 70px;
+  font-size: x-large;
+}
+
+.tekstpadding_right {
+  padding: 40px;
+  font-size: x-large;
+}

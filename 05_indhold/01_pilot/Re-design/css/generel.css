@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Noto";
+  font-weight: 380;
+  src: url("../font/NotoSansKannada-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Noto-light";
+  font-weight: 230;
+  src: url("../font/NotoSansKannada-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 320;
+  src: url("../font/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Caveat";
+  /* font-weight:380 ; */
+  src: url("../font/Caveat-VariableFont_wght.ttf");
+}
+
+
+:root {
+  --clr-body: #f2ece7;
+  --clr-overlay: rgba(239, 230, 223, 0.53);
+  --clr-footer: #84726e;
+}
+body {
+  background-color: var(--clr-body);
+}
+
+nav ul {
+  color: white;
+  list-style: none;
+  font-family: Noto;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: white;
+}
+
+.logo {
+  aspect-ratio: 246/80;
+  margin-top: 2.5%;
+  margin-left: 2.9%;
+  margin-bottom: 0%;
+  width: 27%;
+  cursor: pointer;
+}
+
+h1{
+  font-family: Caveat;
+  color: white;
+  font-size: 10vw;
+  margin:0;
+  padding:0;
+}
+
+h2{
+  color: white;
+  font-family: Noto-light;
+  font-size: 3vw;
+  letter-spacing: 15px;
+  margin:0;
+  padding:0;
+}
+
+h3 {
+  color: white;
+  font-family: Noto-light;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+h4 {
+  font-family: Noto;
+  letter-spacing: 2.4px;
+}
+
+#førstesektion {
+  padding-left: 4%;
+  padding-bottom: 4%;
+}
+#førstesektion h4 {
+  color: white;
+  font-size: 23px;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 15px;
+  max-width: 65ch;
+}
+
+#førstesektion p {
+  color: white;
+}
+hr {
+  width: 70%;
+  border: 0.5px solid rgba(112, 112, 112, 0.4);
+  margin-left: 0%;
+}
+#andensektion p,
+#tredjesektion .alignleft,
+#tredjesektion .alignright {
+  color: #636363;
+}
+.box a {
+  font-family: Roboto;
+  font-size: 15px;
+  cursor: pointer;
+}
+footer {
+  background-color: var(--clr-footer);
+  padding: 0px;
+  border: 0px;
+}
+
+footer ul {
+  list-style: none;
+  color: white;
+  font-family: Noto;
+  font-size: 14px;
+}
+
+.kontakt {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.logo2 {
+  width: 12.8%;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.box {
+  background-color: #84726e;
+  color: white;
+}

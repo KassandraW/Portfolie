@@ -1,0 +1,240 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.size {
+  font-size: 20px;
+}
+.hvid {
+  color: white;
+}
+.baggrund {
+  width: 100%;
+  background-color: var(--clr-overlay);
+}
+
+.baggrund_hvid {
+  width: 100%;
+  background-color: white;
+}
+
+.baggrund_creme {
+  width: 100%;
+  background-color: #f1e9e3;
+}
+
+.indhold,
+.kontaktoverskrift {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* grids */
+
+.center_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-1_1 {
+  display: grid;
+  grid-template-columns: 5fr 8fr;
+}
+
+.kontaktoplysninger {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.grid_tider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  width: max-content;
+}
+/* kontaktoplysninger */
+
+.kontakttekst,
+label {
+  color: #636363;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.oplysninger {
+  padding-top: 18%;
+  padding-right: 11%;
+  padding-left: 11%;
+  padding-bottom: 5%;
+  margin-bottom: 7%;
+}
+
+.oplysninger2 {
+  padding-top: 13%;
+  padding-right: 11%;
+  padding-bottom: 5%;
+  margin-bottom: 7%;
+}
+.kort {
+  width: 90%;
+  padding-top: 11%;
+  padding-right: 11%;
+  padding-bottom: 5%;
+}
+
+.ikon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #f3ece6;
+  width: 100%;
+}
+
+/* tekst */
+
+h3 {
+  padding-top: 7%;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.margin_bottom {
+  margin-bottom: 1em;
+}
+/* Baggrundsbillede */
+body {
+  width: 100%;
+  /* height:100%; */
+  background-image: url("../images/forside.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+/* Forms */
+
+.forms {
+  margin-top: 4em;
+  margin-bottom: 5em;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  background-color: #84726e;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #a18c88;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -1.5%;
+  margin-right: 2.9%;
+  border-bottom: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 0;
+}
+
+nav a {
+  position: relative;
+  z-index: 1;
+}
+
+nav a:after {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  top: -30%;
+  left: -18%;
+  margin: auto;
+  width: 135%;
+  content: ".";
+  color: transparent;
+  background: rgba(239, 230, 223, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 130%;
+  transition: all 0.6s ease;
+}
+.active:after {
+  opacity: 1;
+  visibility: visible;
+  height: 130%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1%;
+  padding-left: 1.5%;
+  padding-right: 2.9%;
+}
+
+footer {
+  background-color: #84726e;
+  border: 0px;
+}
+
+footer ul {
+  list-style: none;
+  color: white;
+  font-family: Noto;
+  font-size: 14px;
+}
+
+#rablogo {
+  width: 12.8%;
+}
