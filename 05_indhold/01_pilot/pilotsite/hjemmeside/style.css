@@ -3,29 +3,56 @@
     padding:0;
 }
 
+img{
+    max-width: 100%;
+}
 
 main,body,html{
     height:100%;
 }
 
-main{
+body{
     background-color:#101010;
 }
 
 .flex{
     display: flex;
     flex-direction: column;
-    margin:1%;
+    margin:10px;
 }
 
 .margin-bot{
-    margin-bottom:1%;
+    margin-bottom:2%;
 }
 
 .titel{
     width:100%;
     background-color:#101010;
     height:125px;
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    border:0;
+
+}
+
+#start{
+    width:50px;
+    height:50px;
+    background-size: contain;
+    background-image: url(../billeder/start.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#stop{
+    width:50px;
+    height:50px;
+    background-image: url(../billeder/replay.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 h1{
@@ -33,14 +60,38 @@ h1{
     color:white;
     font-size: 100px;
 }
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top:1em;
+}
 .produceret{
     display: flex;
     gap: 1em;
+    justify-content: center;
 }
 
+.slider{
+    cursor: pointer;
+}
+
+.flex_buttons{
+    display:flex;
+}
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
+}
+
+.marg{
+    margin-right:5%;
+}
+
+.marg-left{
+    margin-left: 2%;
 }
 
 .billede{
@@ -48,4 +99,42 @@ p{
     background-image: url(billeder/Kamera.webp);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 557px){
+    .flex_buttons{
+        width:560px;
+        max-width: 600px;
+        margin:auto;
+    }
+
+    #video_file, #video{
+        width:560px;
+        height:315px;
+        max-width: 600px;
+        margin: 5px auto;
+    }
+
+    .titel{
+        width:100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .produceret{
+        width:100%;
+        justify-content: center;
+    }
+    .billeder{
+        margin:20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        width:70%;
+        margin-bottom:10px;
+    }
+    
 }
